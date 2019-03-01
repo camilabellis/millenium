@@ -1,0 +1,24 @@
+<h1>Contactanos</h1>
+
+<form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+  
+  <h5 *ngIf="success">Tu mensaje fue enviado. Te responderemos dentro de las 24 horas.</h5>
+  
+  <label>
+    Nombre:
+    <input type="text" formControlName="name">
+    <div *ngIf="submitted && messageForm.controls.name.errors" class="error">
+      <div *ngIf="messageForm.controls.name.errors.required">Tu nombre es requerido</div>
+    </div>
+  </label>
+  
+  <label>
+    Consulta:
+    <textarea formControlName="message"></textarea>
+    <div *ngIf="submitted && messageForm.controls.message.errors" class="error">
+      <div *ngIf="messageForm.controls.message.errors.required">Una consulta es requerida</div>
+    </div>
+  </label>
+  
+  <input type="submit" value="Enviar mensaje" class="cta">
+</form>

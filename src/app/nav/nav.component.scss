@@ -1,0 +1,40 @@
+header {
+  background: #3B61A5;
+  -webkit-box-shadow: 0px 7px 35px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 7px 35px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 7px 35px 0px rgba(0,0,0,0.4);
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+  .logo {
+    font-weight: bold;
+  }
+
+  nav {
+    justify-self: right;
+    display: block;
+    
+    ul {
+      list-style-type: none;
+      margin: 0; padding: 0;
+      
+      li {
+        float: left;
+        
+        a {
+          padding: 1.5em;
+          text-transform: uppercase;
+          font-size: .8em;
+          
+          &:hover {
+            background: #4d75b9;
+          }
+        }
+      }
+    }
+  }
+};

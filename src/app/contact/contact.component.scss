@@ -1,0 +1,35 @@
+:host() {
+  width: 80%;
+}
+
+label {
+  display: block;
+  
+  input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 1em;
+  }
+
+  .error {
+    margin-top: -20px;
+    background: #ff9900;
+    padding: .5em;
+    display: inline-block;
+    font-size: .9em;
+    margin-bottom: 20px;
+  }
+}
+
+.cta {
+  background: #3B61A5;
+  border: none;
+  color: white;
+
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 1em;
+  cursor: pointer;
+  font-family: 'Montserrat';
+}
